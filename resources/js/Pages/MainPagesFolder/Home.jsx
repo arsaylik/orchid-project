@@ -10,54 +10,18 @@ export default function Home() {
         <>
 <Layout>
 <section>
-  <nav
-    class="items-center  bg-slate-950 py-2 shadow-sm shadow-neutral-700/10 dark:bg-slate-950 dark:shadow-black/30 flex justify-center"
-    data-te-navbar-ref>
-    <div class="flex w-full justify-center px-6 ">
-      <div class="flex items-center">
-        <button
-          class="block border-0 bg-transparent py-2 pr-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-          type="button" data-te-collapse-init data-te-target="#navbarSupportedContentY"
-          aria-controls="navbarSupportedContentY" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="[&>svg]:w-7">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
-              <path fill-rule="evenodd"
-                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                clip-rule="evenodd" />
-            </svg>
-          </span>
-        </button>
+<nav class="bg-white shadow dark:bg-slate-950">
+                <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
 
+                    <a href="/" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Home</a>
 
-      </div>
+                    <a href="/Works" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Works</a>
 
-      <div class="lg:flex lg:mx-auto  lg:items-center lg:w-auto lg:space-x-6 "
-        id="navbarSupportedContentY" data-te-collapse-item>
-        <ul class="p-3 mr-auto lg:flex lg:flex-row" data-te-navbar-nav-ref>
-          <li class="mb-2 lg:mb-0 mx-3" data-te-nav-item-ref>
-            <a class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
-              href="/" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light"
-              disabled>Home</a>
-          </li>
-          <li class="mb-2 lg:mb-0 mx-3" data-te-nav-item-ref>
-            <a class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
-              href="/Works" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light">Works</a>
-          </li>
-          <li class="mb-2 lg:mb-0 mx-3" data-te-nav-item-ref>
-            <a class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
-              href="/Blog" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light">Blog</a>
-          </li>
-          <li class="mb-2 lg:mb-0 mx-3" data-te-nav-item-ref>
-            <a class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
-              href="/Contact" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light">Contact</a>
-          </li>
+                    <a href="Blog" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Blog</a>
 
-        </ul>
-      </div>
-
-
-    </div>
-  </nav>
+                    <a href="Contact" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Contact</a>
+                </div>
+            </nav>
 
   <div class="relative overflow-hidden bg-cover bg-no-repeat"style={{
     backgroundPosition: '50%',
