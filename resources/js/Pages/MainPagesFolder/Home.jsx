@@ -1,27 +1,19 @@
 import Layout from "@/Layouts/Layout";
 // import "C:/Users/hp/OneDrive/Masaüstü/orchid/orchid-project/resources/css/home.css";
-
+import { useTranslation } from "react-i18next";
+import './i18n';
+import Navbar from "@/Pages/MainPagesFolder/Navbar";
 
 export default function Home() {
 
+    const { t, i18n } = useTranslation();
 
 
     return (
         <>
 <Layout>
 <section>
-<nav class="bg-white shadow dark:bg-slate-950">
-                <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
-
-                    <a href="/" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Home</a>
-
-                    <a href="/Works" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Works</a>
-
-                    <a href="Blog" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Blog</a>
-
-                    <a href="Contact" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Contact</a>
-                </div>
-            </nav>
+<Navbar/>
 
   <div class="relative overflow-hidden bg-cover bg-no-repeat"style={{
     backgroundPosition: '50%',
@@ -33,12 +25,12 @@ export default function Home() {
       <div class="flex h-full items-center justify-center">
         <div class="px-6 text-center text-white md:px-12">
           <h1 class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-            Welcome to <span>my website</span>
+            {t("welcome")}
           </h1>
           <a  href="/Works"
             class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
             data-te-ripple-init data-te-ripple-color="light">
-            Get started
+            {t("Get started")}
           </a>
         </div>
       </div>
