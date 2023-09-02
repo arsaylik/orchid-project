@@ -7,7 +7,6 @@ export default function Blog() {
     return(
         <>
     <Layout>
-    <Navbar/>
 
 <div class="bg-slate-300">
 <div class="max-w-screen-lg mx-auto">
@@ -209,7 +208,7 @@ export default function Blog() {
 
     </main>
 
-    
+
   </div>
   </div>
     </Layout>
