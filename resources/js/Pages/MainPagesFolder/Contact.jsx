@@ -1,16 +1,14 @@
 import Layout from "@/Layouts/Layout";
 import Navbar from "@/Pages/MainPagesFolder/Navbar";
-import "C:/Users/hp/OneDrive/Masaüstü/orchid/orchid-project/resources/css/contact.css";
 import React, { useState } from "react";
-import axios from 'axios';
+import axios from "axios";
+import "@/../css/contact.css";
 
 export default function Contact() {
-
-
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        message: ""
+        message: "",
     });
 
     const handleChange = (e) => {
@@ -25,19 +23,16 @@ export default function Contact() {
         console.log(formData);
 
         try {
-          await axios.post("/submit-form", formData)
-          .then(response=>(console.log(response)))
-          .catch(err=>console.log(err))
-          alert("Form başarıyla gönderildi.");
-          console.log("Form başarıyla gönderildi.");
-
+            await axios
+                .post("/submit-form", formData)
+                .then((response) => console.log(response))
+                .catch((err) => console.log(err));
+            alert("Form başarıyla gönderildi.");
+            console.log("Form başarıyla gönderildi.");
         } catch (error) {
-
-          console.error("Form gönderimi başarısız oldu.");
+            console.error("Form gönderimi başarısız oldu.");
         }
-      };
-
-
+    };
 
     return (
         <>
