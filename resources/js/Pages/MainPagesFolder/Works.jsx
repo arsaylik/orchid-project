@@ -1,12 +1,9 @@
-import Navbar from "@/Pages/MainPagesFolder/Navbar";
 import Layout from "@/Layouts/Layout";
 
 export default function work() {
     return (
         <>
             <Layout>
-                <Navbar />
-
                 <div id="container">
                     <div class="box">
                         <div class="content">

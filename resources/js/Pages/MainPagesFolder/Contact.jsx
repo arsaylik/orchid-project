@@ -38,8 +38,6 @@ export default function Contact() {
         <>
             <div className="bg-slate-200">
                 <Layout>
-                    <Navbar />
-
                     <div id="container">
                         <h1>&bull; Keep in Touch &bull;</h1>
                         <div class="underline"></div>
